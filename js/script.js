@@ -15,14 +15,15 @@ let preferColor = prompt("Qual è il tuo colore preferito?"); //String
 console.log(preferColor, typeof preferColor)
 
 // PARTE LOGICA
-// - sommo Nome Cognome e colore
-const password = userName + surName + preferColor; // String
+// - sommo Nome, Cognome, colore e numero random da 0 a 99
+let randomNumb = Math.floor(Math.random() * 100); //Number
+console.log(randomNumb, typeof randomNumb)
+const password = userName + surName + preferColor + randomNumb; // String
 console.log(password, typeof password);
 
 // STAMPA DEL OUTPUT
-
 // Preparo il messaggio
-const resultMessage = `Ho calcolato la tua password ed è:ge ${password}`; // String
+const resultMessage = `Ho calcolato la tua password ed è: ${password}`; // String
 console.log(resultMessage);
 
 // Stampo il risultato della somma in pagina
